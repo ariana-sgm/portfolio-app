@@ -1,0 +1,53 @@
+<div class="card">
+        <h5 class="card-header">
+            Actividades
+        </h5>
+        <div class="card-body">
+          
+            <div class="card">
+                <h5 class="card-header">
+                    Voluntariado
+                </h5>
+                <div class="card-body">
+                  
+                    <div *ngFor="let voluntariado of voluntariados">
+
+                        <div class="card text-white bg-info mb-3">
+                          <div class="card-header">
+                            {{voluntariado.organisation}} ({{voluntariado.date}})
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">{{voluntariado.about}}</p>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    
+            <br/>
+    
+            <div class="card">
+                <h5 class="card-header">
+                    Actividades académicas
+                </h5>
+                <div class="card-body">
+                  
+                    <div *ngFor="let academica of academicas">
+
+                        <div class="card text-white bg-info mb-3">
+                          <div class="card-header">
+                            {{academica.institute}} ({{academica.date}})
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">{{academica.title}}</h5>
+                            <p class="card-text">{{academica.about}}</p>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+
+        </div>
+      </div>

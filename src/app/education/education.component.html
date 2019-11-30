@@ -1,0 +1,17 @@
+<div class="card">
+    <h5 class="card-header">
+        Educación
+    </h5>
+    <div class="card-body">
+        <div *ngFor="let education of educations">
+            <div class="card text-white bg-info mb-3">
+                <div class="card-header">
+                    {{education.about}} ({{education.date}})
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{education.institute}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

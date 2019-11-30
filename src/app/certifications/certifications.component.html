@@ -1,0 +1,53 @@
+<div class="card">
+    <h5 class="card-header">
+        Formación adicional
+    </h5>
+    <div class="card-body">
+
+        <div class="card">
+            <h5 class="card-header">
+                Certificados
+            </h5>
+            <div class="card-body">
+              
+                <div *ngFor="let certificado of certificados">
+
+                    <div class="card text-white bg-info mb-3">
+                      <div class="card-header">
+                        {{certificado.institute}} - {{certificado.year}}
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">{{certificado.title}}</h5>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="card">
+            <h5 class="card-header">
+                Cursos/ Becas
+            </h5>
+            <div class="card-body">
+              
+                <div *ngFor="let curso of cursos">
+
+                    <div class="card text-white bg-info mb-3">
+                      <div class="card-header">
+                        {{curso.institute}} - {{curso.year}}
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">{{curso.title}}</h5>
+                        <p class="card-text">{{curso.about}}</p>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

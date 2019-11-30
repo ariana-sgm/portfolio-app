@@ -1,0 +1,21 @@
+<div class="card">
+    <h5 class="card-header">
+        Experiencia
+    </h5>
+    <div class="card-body">
+      
+      <div *ngFor="let experience of experiences">
+
+        <div class="card text-white bg-info mb-3">
+          <div class="card-header">
+            {{experience.position}} ({{experience.date}})
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{experience.institute}} - {{experience.address}}</h5>
+            <p class="card-text">{{experience.about}}</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>
